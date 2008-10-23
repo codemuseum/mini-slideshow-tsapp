@@ -1,7 +1,7 @@
 <div class="imageElement">
 	<h3><%=h slide.title %></h3>
 	<p></p>
-	<a href="<%=h slide.link %>" title="open image" class="open"></a>
+	<% unless slide.link.blank? %><a href="<%=h slide.link %>" title="open image" class="open"></a><% end %>
 	<%= image_tag slide.picture_url, :class => 'full' %>
 	<%= image_tag slide.picture_url, :class => 'thumbnail' %>
 </div>

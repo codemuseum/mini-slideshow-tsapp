@@ -1,35 +1,30 @@
-#myGallery, #myGallerySet, #flickrGallery
+.app-mini-slideshow .slides
 {
-	width: 460px;
-	height: 345px;
+	width: 400px;
+	height: 300px;
 	z-index:5;
 	border: 1px solid #000;
 }
 
-#flickrGallery
-{
-	width: 500px;
-	height: 334px;
-}
 
-#myGallery img.thumbnail, #myGallerySet img.thumbnail
+.app-mini-slideshow .slides img.thumbnail
 {
 	display: none;
 }
 
-.jdGallery
+.app-mini-slideshow .slides.jdGallery
 {
 	overflow: hidden;
 	position: relative;
 }
 
-.jdGallery img
+.app-mini-slideshow .slides.jdGallery img
 {
 	border: 0;
 	margin: 0;
 }
 
-.jdGallery .slideElement
+.app-mini-slideshow .slides.jdGallery .slideElement
 {
 	width: 100%;
 	height: 100%;
@@ -39,7 +34,7 @@
 	background-image: url('/images/loading-bar-black.gif');
 }
 
-.jdGallery .loadingElement
+.app-mini-slideshow .slides.jdGallery .loadingElement
 {
 	width: 100%;
 	height: 100%;
@@ -52,7 +47,7 @@
 	background-image: url('/images/loading-bar-black.gif');
 }
 
-.jdGallery .slideInfoZone
+.app-mini-slideshow .slides.jdGallery .slideInfoZone
 {
 	position: absolute;
 	z-index: 10;
@@ -67,22 +62,23 @@
 	overflow: hidden;
 }
 
-* html .jdGallery .slideInfoZone
+* html .app-mini-slideshow .slides.jdGallery .slideInfoZone
 {
 	bottom: -1px;
 }
 
-.jdGallery .slideInfoZone h2
+.app-mini-slideshow .slides.jdGallery .slideInfoZone h2
 {
 	padding: 0;
 	font-size: 80%;
 	margin: 0;
-	margin: 2px 5px;
-	font-weight: bold;
+	margin: 5px 5px;
+	font-weight: normal;
 	color: inherit;
+	text-align:center;
 }
 
-.jdGallery .slideInfoZone p
+.app-mini-slideshow .slides.jdGallery .slideInfoZone p
 {
 	padding: 0;
 	font-size: 60%;
@@ -90,7 +86,7 @@
 	color: #eee;
 }
 
-.jdGallery div.carouselContainer
+.app-mini-slideshow .slides.jdGallery div.carouselContainer
 {
 	position: absolute;
 	height: 135px;
@@ -101,7 +97,7 @@
 	top: 0;
 }
 
-.jdGallery a.carouselBtn
+.app-mini-slideshow .slides.jdGallery a.carouselBtn
 {
 	position: absolute;
 	bottom: 0;
@@ -116,7 +112,7 @@
 	cursor: pointer;
 }
 
-.jdGallery .carousel
+.app-mini-slideshow .slides.jdGallery .carousel
 {
 	position: absolute;
 	width: 100%;
@@ -130,13 +126,14 @@
 	overflow: hidden;
 }
 
-.jdExtCarousel
+.app-mini-slideshow .slides.jdExtCarousel
 {
 	overflow: hidden;
 	position: relative;
 }
 
-.jdGallery .carousel .carouselWrapper, .jdExtCarousel .carouselWrapper
+.app-mini-slideshow .slides.jdGallery .carousel .carouselWrapper, 
+.app-mini-slideshow .slides.jdExtCarousel .carouselWrapper
 {
 	position: absolute;
 	width: 100%;
@@ -146,12 +143,14 @@
 	overflow: hidden;
 }
 
-.jdGallery .carousel .carouselInner, .jdExtCarousel .carouselInner
+.app-mini-slideshow .slides.jdGallery .carousel .carouselInner,
+.app-mini-slideshow .slides.jdExtCarousel .carouselInner
 {
 	position: relative;
 }
 
-.jdGallery .carousel .carouselInner .thumbnail, .jdExtCarousel .carouselInner .thumbnail
+.app-mini-slideshow .slides.jdGallery .carousel .carouselInner .thumbnail, 
+.app-mini-slideshow .slides.jdExtCarousel .carouselInner .thumbnail
 {
 	cursor: pointer;
 	background: #000;
@@ -160,12 +159,14 @@
 	border: solid 1px #fff;
 }
 
-.jdGallery .wall .thumbnail, .jdExtCarousel .wall .thumbnail
+.app-mini-slideshow .slides.jdGallery .wall .thumbnail, 
+.app-mini-slideshow .slides.jdExtCarousel .wall .thumbnail
 {
 	margin-bottom: 10px;
 }
 
-.jdGallery .carousel .label, .jdExtCarousel .label
+.app-mini-slideshow .slides.jdGallery .carousel .label, 
+.app-mini-slideshow .slides.jdExtCarousel .label
 {
 	font-size: 13px;
 	position: absolute;
@@ -175,7 +176,8 @@
 	margin: 0;
 }
 
-.jdGallery .carousel .wallButton, .jdExtCarousel .wallButton
+.app-mini-slideshow .slides.jdGallery .carousel .wallButton, 
+.app-mini-slideshow .slides.jdExtCarousel .wallButton
 {
 	font-size: 10px;
 	position: absolute;
@@ -188,19 +190,21 @@
 	cursor: pointer;
 }
 
-.jdGallery .carousel .label .number, .jdExtCarousel .label .number
+.app-mini-slideshow .slides.jdGallery .carousel .label .number, 
+.app-mini-slideshow .slides.jdExtCarousel .label .number
 {
 	color: #b5b5b5;
 }
 
-.jdGallery a
+.app-mini-slideshow .slides.jdGallery a
 {
 	font-size: 100%;
 	text-decoration: none;
 	color: inherit;
 }
 
-.jdGallery a.right, .jdGallery a.left
+.app-mini-slideshow .slides.jdGallery a.right, 
+.app-mini-slideshow .slides.jdGallery a.left
 {
 	position: absolute;
 	height: 99%;
@@ -213,12 +217,14 @@
 	opacity: 0.2;
 }
 
-* html .jdGallery a.right, * html .jdGallery a.left
+* html .app-mini-slideshow .slides.jdGallery a.right, 
+* html .app-mini-slideshow .slides.jdGallery a.left
 {
 	filter:alpha(opacity=50);
 }
 
-.jdGallery a.right:hover, .jdGallery a.left:hover
+.app-mini-slideshow .slides.jdGallery a.right:hover, 
+.app-mini-slideshow .slides.jdGallery a.left:hover
 {
 	filter:alpha(opacity=80);
 	-moz-opacity:0.8;
@@ -226,25 +232,25 @@
 	opacity: 0.8;
 }
 
-.jdGallery a.left
+.app-mini-slideshow .slides.jdGallery a.left
 {
 	left: 0;
 	top: 0;
 	background: url('/images/fleche1.png') no-repeat center left;
 }
 
-* html .jdGallery a.left { background: url('/images/fleche1.gif') no-repeat center left; }
+* html .app-mini-slideshow .slides.jdGallery a.left { background: url('/images/fleche1.gif') no-repeat center left; }
 
-.jdGallery a.right
+.app-mini-slideshow .slides.jdGallery a.right
 {
 	right: 0;
 	top: 0;
 	background: url('/images/fleche2.png') no-repeat center right;
 }
 
-* html .jdGallery a.right { background: url('/images/fleche2.gif') no-repeat center right; }
+* html .app-mini-slideshow .slides.jdGallery a.right { background: url('/images/fleche2.gif') no-repeat center right; }
 
-.jdGallery a.open
+.app-mini-slideshow .slides.jdGallery a.open
 {
 	left: 0;
 	top: 0;
@@ -252,7 +258,7 @@
 	height: 100%;
 }
 
-.withArrows a.open
+.app-mini-slideshow .slides.withArrows a.open
 {
 	position: absolute;
 	top: 0;
@@ -267,100 +273,9 @@
 	opacity: 0.8;
 }
 
-.withArrows a.open:hover { background: url('/images/open.png') no-repeat center center; }
+.app-mini-slideshow .slides.withArrows a.open:hover { background: url('/images/open.png') no-repeat center center; }
 
-* html .withArrows a.open:hover { background: url('/images/open.gif') no-repeat center center;
+* html .app-mini-slideshow .slides.withArrows a.open:hover { background: url('/images/open.gif') no-repeat center center;
 	filter:alpha(opacity=80); }
 	
 	
-/* Gallery Sets */
-
-.jdGallery a.gallerySelectorBtn
-{
-	z-index: 15;
-	position: absolute;
-	top: 0;
-	left: 30px;
-	height: 20px;
-	/*width: 100px; background: url('/images/carousel_btn.gif') no-repeat;*/
-	text-align: center;
-	padding: 0 10px;
-	font-size: 13px;
-	background: #333;
-	color: #fff;
-	cursor: pointer;
-	opacity: .4;
-	-moz-opacity: .4;
-	-khtml-opacity: 0.4;
-	filter:alpha(opacity=40);
-}
-
-.jdGallery .gallerySelector
-{
-	z-index: 20;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	background: #000;
-}
-
-.jdGallery .gallerySelector h2
-{
-	margin: 0;
-	padding: 10px 20px 10px 20px;
-	font-size: 20px;
-	line-height: 30px;
-	color: #fff;
-}
-
-.jdGallery .gallerySelector .gallerySelectorWrapper
-{
-	overflow: hidden;
-}
-
-.jdGallery .gallerySelector .gallerySelectorInner div.galleryButton
-{
-	margin-left: 10px;
-	margin-top: 10px;
-	border: 1px solid #888;
-	padding: 5px;
-	height: 40px;
-	color: #fff;
-	cursor: pointer;
-	float: left;
-}
-
-.jdGallery .gallerySelector .gallerySelectorInner div.hover
-{
-	background: #333;
-}
-
-.jdGallery .gallerySelector .gallerySelectorInner div.galleryButton div.preview
-{
-	background: #000;
-	background-position: center center;
-	float: left;
-	border: none;
-	width: 40px;
-	height: 40px;
-	margin-right: 5px;
-}
-
-.jdGallery .gallerySelector .gallerySelectorInner div.galleryButton h3
-{
-	margin: 0;
-	padding: 0;
-	font-size: 12px;
-	font-weight: normal;
-}
-
-.jdGallery .gallerySelector .gallerySelectorInner div.galleryButton p.info
-{
-	margin: 0;
-	padding: 0;
-	font-size: 12px;
-	font-weight: normal;
-	color: #aaa;
-}

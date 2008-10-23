@@ -1,0 +1,14 @@
+.app-mini-slideshow .slides {
+	width: 400px;
+	z-index:5;
+	border: 1px solid #000;
+	background-color:#ddd;
+}
+
+.app-mini-slideshow .slides .preview img {width:25px;}
+.app-mini-slideshow .slides .slide {background-color:#eee;border-bottom:1px solid #ccc;}
+.app-mini-slideshow .slides .settings { background-color:#333; color:#ccc; font-size:80%; padding:4px; }
+.app-mini-slideshow .slides .settings .delay {text-align:center; }
+.app-mini-slideshow .slides .settings .add {text-align:right; margin:2px 5px;}
+.app-mini-slideshow .slides .settings .add a {border:1px solid #555; padding:2px 5px; color:#ccc; }
+.app-mini-slideshow .slides a {cursor:pointer;}
