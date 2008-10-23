@@ -42,7 +42,8 @@ var MiniSlideshowEdit = {
         this._observeSlide(newEl);
         this.slideCount++;
         this._showSlide(newEl);
-        newEl.getElementsBySelector('input')[0].focus();
+        // newEl.getElementsBySelector('input')[0].focus();
+        TS.Assets.Selector.selectAsset(newEl, 'pictures');
       },
       _showSlide: function(slide) {},
       _observeSlide: function(slide) {

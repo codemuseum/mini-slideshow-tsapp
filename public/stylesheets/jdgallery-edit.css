@@ -1,14 +1,19 @@
-.app-mini-slideshow .slides {
-	width: 400px;
-	z-index:5;
-	border: 1px solid #000;
-	background-color:#ddd;
-}
+.app-mini-slideshow .slides { width: 400px; z-index:5; border: 1px solid #000; background-color:#ddd; }
+.app-mini-slideshow .slides a {cursor:pointer;}
 
-.app-mini-slideshow .slides .preview img {width:25px;}
-.app-mini-slideshow .slides .slide {background-color:#eee;border-bottom:1px solid #ccc;}
+.app-mini-slideshow .slides .slide {padding:3px; background-color:#eee;border-bottom:1px solid #ccc;}
+.app-mini-slideshow .slides .preview {top:5px; left:23px; position:absolute; width:50px; }
+.app-mini-slideshow .slides .preview img {width:50px; cursor:pointer;}
+.app-mini-slideshow .slides .slide .inputs {margin-left:80px;}
+.app-mini-slideshow .slides .slide .title,
+.app-mini-slideshow .slides .slide .link { font-size:80%; }
+
 .app-mini-slideshow .slides .settings { background-color:#333; color:#ccc; font-size:80%; padding:4px; }
 .app-mini-slideshow .slides .settings .delay {text-align:center; }
 .app-mini-slideshow .slides .settings .add {text-align:right; margin:2px 5px;}
-.app-mini-slideshow .slides .settings .add a {border:1px solid #555; padding:2px 5px; color:#ccc; }
-.app-mini-slideshow .slides a {cursor:pointer;}
+.app-mini-slideshow .slides .settings .add a {border:1px solid #555; -moz-border-radius: 5px; -webkit-border-radius: 5px; padding:2px 5px; color:#ccc; }
+
+
+.app-mini-slideshow .remove {position:absolute; top: 3px; left: 2px; width: 20px; height:20px; font-size:1px; letter-spacing:-1px; overflow:hidden;}
+.app-mini-slideshow .remove a {cursor:pointer; display:block; width:20px; height:20px; color:transparent; background: transparent url(/images/delete-small.png) 0px 0px no-repeat;}
+.app-mini-slideshow .remove a:hover {background-position:0px -60px; background-color: transparent;}
