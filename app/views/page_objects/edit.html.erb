@@ -1,0 +1,27 @@
+<% # stylesheets 'scaffold' %>
+<% # javascripts 'prototype', 'effects', 'dragdrop', 'assets' %>
+
+<% javascripts 'prototype', 'effects', 'dragdrop', 'assets', 'mini-slideshow-edit' %>
+
+<% 
+  all_slides = @page_object.slides + (@page_object.added_slides || [])
+  all_slides = [Slide.new] if all_slides.size == 0 
+%>
+
+<% fields_for_page_object do |f| %>
+
+  <div class="slides">
+
+    <% all_slides.each do |slide| %>
+      <%= render :partial => 'slides/embedded_fields', 
+            :locals => {:f => f, :slide => slide } unless slide.destroy_association? %>
+    <% end %>
+  
+    <div class="settings">
+      <%= f.label :delay, 'Show Each Slide for:' %>
+      <%= f.text_field :delay, :size => 3, :maxlength => 3 %> <%= f.label :delay, 'secs.' %>
+    </div>
+  </div>
+
+
+<% end %>

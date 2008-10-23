@@ -1,0 +1,6 @@
+<div class="slides delay-<%=h @page_object.delay %>">
+  <%= render :partial => @page_object.slides %>
+</div>
+
+<% stylesheets 'jdgallery' -%>
+<% javascripts 'mootools-v111', 'jdgallery', 'mini-slideshow' -%>

@@ -1,0 +1,20 @@
+<%# Takes f, and optionally a slide to preselect %>
+<% slide = Slide.new if local_assigns[:slide].nil? %>
+
+<% fields_for "#{f.object_name}[assigned_slides][]", slide do |sf| -%>
+  <div class="slide" id="<%= slide.new_record? ? "new_slide__INDEX_" : "slide_#{slide.id}" %>">
+    <%= sf.hidden_field :position, :class => 'position-value', :index => nil %>
+    <a class="remove">Delete Slide</a>
+    <div class="preview">
+      <%= asset_preview_fields(sf, [:pictures], true) %>
+    </div>
+    <div class="title">
+      <%= sf.text_area :title, :index => nil %>
+    </div>
+    <div class="settings ts-settings-box-ui">
+      <%= sf.label :link, 'Link:' %> <%= page_url_fields(sf, true) %>
+      <%= page_change_link %>
+      &bull; <%= asset_change_link(sf, [:pictures]) %>
+    </div>
+  </div>
+<% end -%>

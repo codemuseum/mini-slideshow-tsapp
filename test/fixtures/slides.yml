@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  page_object: 
+  asset_urn: MyString
+  asset_type: MyString
+  position: 1
+  title: MyText
+  link: MyString
+
+two:
+  page_object: 
+  asset_urn: MyString
+  asset_type: MyString
+  position: 1
+  title: MyText
+  link: MyString
