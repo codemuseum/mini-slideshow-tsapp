@@ -50,15 +50,15 @@ var MiniSlideshowEdit = {
         var thisRef = this;
         var remove = slide.getElementsBySelector('.remove')[0];
         remove.observe('click', function() { slide.remove(); thisRef.slideCount--; });
-        TS.Assets.Selector.register(slide);
-        TS.Pages.Selector.register(slide);
+        TS.Assets.Selector.register(slide.getElementsBySelector('.preview')[0]);
+        TS.Assets.Selector.register(slide.getElementsBySelector('.link')[0]);
+        // TS.Pages.Selector.register(slide);
       },
       _makeSortable: function() {  
         Sortable.create(this.slidesEl, { only:'slide', tag:'div', constraint:'vertical' });
       },
       _saveOrder: function() {
         var currentPosition = 0;
-        var thisRef = this;
         this.slidesEl.getElementsBySelector('div.slide').each(function(slideEl) {
           slideEl.getElementsBySelector('input.position-value')[0].value = currentPosition;
           currentPosition++;

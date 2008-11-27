@@ -13,8 +13,8 @@
         <%= sf.label :title, 'Caption:' %> <%= sf.text_field :title, :index => nil %>
       </div>
       <div class="link">
-        <%= sf.label :link, 'Link:' %> <%= page_url_fields(sf, true) %>
-        <%= page_change_link %>
+        <%= sf.label :link, 'Link:' %> <%= asset_url_text_field(sf, [:pages, :documents], true) %>
+        <%= asset_change_link(sf, [:pages, :documents], "...") %>
       </div>
     </div>
   </div>

@@ -1,7 +1,7 @@
 .app-mini-slideshow .slides { width: 400px; z-index:5; border: 1px solid #000; background-color:#ddd; }
 .app-mini-slideshow .slides a {cursor:pointer;}
 
-.app-mini-slideshow .slides .slide {padding:3px; background-color:#eee;border-bottom:1px solid #ccc;}
+.app-mini-slideshow .slides .slide {padding:3px; background-color:#eee;border-bottom:1px solid #ccc;position:relative;}
 .app-mini-slideshow .slides .preview {top:5px; left:23px; position:absolute; width:50px; }
 .app-mini-slideshow .slides .preview img {width:50px; cursor:pointer;}
 .app-mini-slideshow .slides .slide .inputs {margin-left:80px;}
