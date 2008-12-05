@@ -1,6 +1,8 @@
+<% if @page_object.slides.size > 0 %>
 <div class="slides delay-<%=h @page_object.delay %> jdGallery withArrows">
   <%= render :partial => @page_object.slides %>
 </div>
 
 <% stylesheets 'jdgallery' -%>
 <% javascripts 'mootools-v111', 'jdgallery', 'mini-slideshow' -%>
+<% end %>
