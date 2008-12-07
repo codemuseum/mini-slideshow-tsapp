@@ -13,6 +13,10 @@ class Slide < ActiveRecord::Base
     @picture_url ||= "#{ThriveSmart::Constants.ts_platform_host}/#{asset_type.downcase.pluralize}/#{asset_urn}.img"
   end
   
+  def new_and_empty?
+    new_record? && asset_urn.blank? && title.blank? && link.blank?
+  end
+  
   ###### Association Specific Code
 
   # Used for other models that might need to mark a slide as *no longer* associated 

@@ -40,7 +40,7 @@ class PageObject < ActiveRecord::Base
       unless slides.detect { |c| c.id.to_s == h[:id] } || self.added_slides.detect { |f| f.id.to_s == h[:id] }
         c = !h[:id].blank? ? Slide.find(h[:id]) : Slide.new({:page_object => self})
         c.attributes = h.reject { |k,v| k == :id } # input values, but don't try to overwrite the id
-        self.added_slides << c unless c.nil?
+        self.added_slides << c unless c.nil? || c.new_and_empty?
       end
     end
     # Delete removed slides
