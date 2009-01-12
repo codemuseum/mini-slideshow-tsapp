@@ -31,7 +31,7 @@
 	background-color: #000;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-image: url('/images/loading-bar-black.gif');
+	background-image: url('/mini-slideshow/images/loading-bar-black.gif');
 }
 
 .app-mini-slideshow .slides.jdGallery .loadingElement
@@ -44,7 +44,7 @@
 	background-color: #000;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-image: url('/images/loading-bar-black.gif');
+	background-image: url('/mini-slideshow/images/loading-bar-black.gif');
 }
 
 .app-mini-slideshow .slides.jdGallery .slideInfoZone
@@ -103,7 +103,7 @@
 	bottom: 0;
 	right: 30px;
 	height: 20px;
-	/*width: 100px; background: url('/images/carousel_btn.gif') no-repeat;*/
+	/*width: 100px; background: url('/mini-slideshow/images/carousel_btn.gif') no-repeat;*/
 	text-align: center;
 	padding: 0 10px;
 	font-size: 13px;
@@ -236,19 +236,19 @@
 {
 	left: 0;
 	top: 0;
-	background: url('/images/fleche1.png') no-repeat center left;
+	background: url('/mini-slideshow/images/fleche1.png') no-repeat center left;
 }
 
-* html .app-mini-slideshow .slides.jdGallery a.left { background: url('/images/fleche1.gif') no-repeat center left; }
+* html .app-mini-slideshow .slides.jdGallery a.left { background: url('/mini-slideshow/images/fleche1.gif') no-repeat center left; }
 
 .app-mini-slideshow .slides.jdGallery a.right
 {
 	right: 0;
 	top: 0;
-	background: url('/images/fleche2.png') no-repeat center right;
+	background: url('/mini-slideshow/images/fleche2.png') no-repeat center right;
 }
 
-* html .app-mini-slideshow .slides.jdGallery a.right { background: url('/images/fleche2.gif') no-repeat center right; }
+* html .app-mini-slideshow .slides.jdGallery a.right { background: url('/mini-slideshow/images/fleche2.gif') no-repeat center right; }
 
 .app-mini-slideshow .slides.jdGallery a.open
 {
@@ -273,9 +273,9 @@
 	opacity: 0.8;
 }
 
-.app-mini-slideshow .slides.withArrows a.open:hover { background: url('/images/open.png') no-repeat center center; }
+.app-mini-slideshow .slides.withArrows a.open:hover { background: url('/mini-slideshow/images/open.png') no-repeat center center; }
 
-* html .app-mini-slideshow .slides.withArrows a.open:hover { background: url('/images/open.gif') no-repeat center center;
+* html .app-mini-slideshow .slides.withArrows a.open:hover { background: url('/mini-slideshow/images/open.gif') no-repeat center center;
 	filter:alpha(opacity=80); }
 	
 	

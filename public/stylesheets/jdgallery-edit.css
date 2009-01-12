@@ -15,5 +15,5 @@
 
 
 .app-mini-slideshow .remove {position:absolute; top: 3px; left: 2px; width: 20px; height:20px; font-size:1px; letter-spacing:-1px; overflow:hidden;}
-.app-mini-slideshow .remove a {cursor:pointer; display:block; width:20px; height:20px; color:transparent; background: transparent url(/images/delete-small.png) 0px 0px no-repeat;}
+.app-mini-slideshow .remove a {cursor:pointer; display:block; width:20px; height:20px; color:transparent; background: transparent url(/mini-slideshow/images/delete-small.png) 0px 0px no-repeat;}
 .app-mini-slideshow .remove a:hover {background-position:0px -60px; background-color: transparent;}
