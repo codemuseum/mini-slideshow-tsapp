@@ -6,11 +6,11 @@ class Slide < ActiveRecord::Base
   validates_presence_of :asset_urn
   
   def picture?
-    @picture || ( !self.asset_urn.blank? && !self.asset_type.blank? )
+    ThriveSmart::Helpers::AssetHelper::asset?(asset_type, asset_urn)
   end
   
   def picture_url
-    @picture_url ||= "/#{asset_type.downcase.pluralize}/#{asset_urn}.img"
+    @picture_url ||= ThriveSmart::Helpers::AssetHelper::asset_url(asset_type, asset_urn)
   end
   
   def new_and_empty?
